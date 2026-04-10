@@ -1,0 +1,13 @@
+flask
+requests
+flask-cors
+gunicorn
+flask-sqlalchemy
+PyJWT
+bcrypt
+bleach
+pydantic
+email-validator
+Flask-Limiter
+python-dotenv
+psycopg2-binary
