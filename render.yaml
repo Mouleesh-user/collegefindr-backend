@@ -1,6 +1,0 @@
-services:
-  - type: static
-    name: collegefindr-frontend
-    buildCommand: ""
-    staticPublishPath: .
-    autoDeploy: true
