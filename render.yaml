@@ -1,0 +1,61 @@
+services:
+  - type: web
+    name: collegefindr-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 120 --keep-alive 30 --max-requests 1000 --max-requests-jitter 100
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: FLASK_DEBUG
+        value: "0"
+      - key: JWT_EXPIRY_HOURS
+        value: "24"
+      - key: CHAT_RATE_LIMIT
+        value: 20 per minute
+      - key: CHAT_DAILY_RATE_LIMIT
+        value: 200 per day
+      - key: CHAT_IP_RATE_LIMIT
+        value: 100 per minute
+      - key: CHAT_MESSAGE_MAX_LENGTH
+        value: "500"
+      - key: OPENROUTER_TIMEOUT_SECONDS
+        value: "20"
+      - key: OPENROUTER_MAX_RETRIES
+        value: "2"
+      - key: RATELIMIT_STORAGE_URI
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: REQUIRE_ALLOWED_ORIGIN
+        value: "1"
+      - key: CLIENT_API_KEY
+        sync: false
+      - key: BOT_HEADER_VALUE
+        value: CollegeFindrWeb
+      - key: CAPTCHA_ENABLED
+        value: "0"
+      - key: HCAPTCHA_SECRET_KEY
+        sync: false
+      - key: SIGNUP_ENABLED
+        value: "0"
+      - key: ALLOWED_USER_EMAILS
+        sync: false
+      - key: SIGNUP_ACCESS_CODE
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: collegefindr-db
+          property: connectionString
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+databases:
+  - name: collegefindr-db
+    databaseName: collegefindr
+    plan: free
