@@ -42,7 +42,7 @@ def _normalize_database_url(value: str) -> str:
 
 
 def _normalize_origin(origin: str) -> str:
-    return origin.strip().rstrip("/")
+    return origin.strip().rstrip("/").lower()
 
 
 def _get_allowed_origins() -> List[str]:
@@ -166,6 +166,7 @@ JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "dev-change-this-secret-with-at-lea
 JWT_ALGORITHM = "HS256"
 JWT_EXPIRY_HOURS = int(os.getenv("JWT_EXPIRY_HOURS", "24"))
 CLIENT_API_KEY = os.getenv("CLIENT_API_KEY", "").strip()
+REQUIRE_CLIENT_API_KEY = os.getenv("REQUIRE_CLIENT_API_KEY", "0").strip().lower() in {"1", "true", "yes", "on"}
 BOT_HEADER_NAME = "X-Requested-With"
 BOT_HEADER_VALUE = os.getenv("BOT_HEADER_VALUE", "CollegeFindrWeb").strip()
 CAPTCHA_ENABLED = os.getenv("CAPTCHA_ENABLED", "0").strip().lower() in {"1", "true", "yes", "on"}
@@ -205,7 +206,7 @@ SYSTEM_PROMPT = (
 
 if JWT_SECRET_KEY == "dev-change-this-secret-with-at-least-32-characters" and os.getenv("FLASK_DEBUG", "0") != "1":
     raise RuntimeError("JWT_SECRET_KEY must be set in production")
-if not CLIENT_API_KEY and os.getenv("FLASK_DEBUG", "0") != "1":
+if REQUIRE_CLIENT_API_KEY and not CLIENT_API_KEY and os.getenv("FLASK_DEBUG", "0") != "1":
     raise RuntimeError("CLIENT_API_KEY must be set in production")
 
 RECENT_CHAT_REQUESTS: Dict[str, Dict[str, Any]] = {}
@@ -461,6 +462,9 @@ def _has_valid_bot_headers() -> bool:
 
 
 def _reject_if_invalid_client_key() -> Optional[Any]:
+    if not REQUIRE_CLIENT_API_KEY:
+        return None
+
     supplied_key = request.headers.get("X-CLIENT-KEY", "").strip()
     if not supplied_key or not CLIENT_API_KEY or supplied_key != CLIENT_API_KEY:
         app.logger.warning("Denied /chat due to invalid X-CLIENT-KEY from ip=%s", _client_ip())

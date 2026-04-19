@@ -32,6 +32,8 @@ services:
         value: https://mouleesh-user.github.io,https://moulesh-user.github.io
       - key: REQUIRE_ALLOWED_ORIGIN
         value: "1"
+      - key: REQUIRE_CLIENT_API_KEY
+        value: "0"
       - key: CLIENT_API_KEY
         sync: false
       - key: BOT_HEADER_VALUE
