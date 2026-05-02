@@ -1,0 +1,91 @@
+[
+  "IIT Bombay", "IIT Delhi", "IIT Madras", "IIT Kanpur", "IIT Kharagpur",
+  "IIT Roorkee", "IIT Guwahati", "IIT Hyderabad", "IIT BHU", "IIT Indore",
+  "IIT Ropar", "IIT Gandhinagar", "IIT Mandi", "IIT Jodhpur", "IIT Patna",
+  "IIT Bhilai", "IIT Goa", "IIT Dharwad", "IIT Tirupati", "IIT Palakkad",
+  "IIT Jammu", "IIT ISM Dhanbad", "IIT Madras Zanzibar",
+
+  "NIT Trichy", "NIT Warangal", "NIT Surathkal", "NIT Calicut",
+  "NIT Allahabad", "NIT Rourkela", "NIT Kurukshetra", "NIT Jaipur",
+  "NIT Durgapur", "NIT Silchar", "NIT Hamirpur", "NIT Jalandhar",
+  "NIT Patna", "NIT Raipur", "NIT Srinagar", "NIT Agartala",
+  "NIT Goa", "NIT Manipur", "NIT Meghalaya", "NIT Mizoram",
+  "NIT Nagaland", "NIT Puducherry", "NIT Sikkim", "NIT Uttarakhand",
+  "NIT Andhra Pradesh", "NIT Delhi", "NIT Arunachal Pradesh",
+
+  "IIIT Hyderabad", "IIIT Bangalore", "IIIT Delhi", "IIIT Allahabad",
+  "IIIT Gwalior", "IIIT Jabalpur", "IIIT Kancheepuram", "IIIT Lucknow",
+  "IIIT Pune", "IIIT Sri City", "IIIT Vadodara", "IIITDM Kancheepuram",
+  "IIITDM Jabalpur",
+
+  "IISc Bangalore", "IISc Bengaluru",
+  "IISER Pune", "IISER Kolkata", "IISER Mohali", "IISER Bhopal",
+  "IISER Thiruvananthapuram", "IISER Tirupati", "IISER Berhampur",
+
+  "BITS Pilani", "BITS Goa", "BITS Hyderabad", "BITS Dubai",
+  "VIT Vellore", "VIT Chennai", "VIT Bhopal", "VIT Andhra Pradesh",
+  "SRM Kattankulathur", "SRM Chennai", "SRM Ramapuram", "SRM Vadapalani",
+  "Manipal Institute of Technology", "MIT Manipal", "Manipal Academy of Higher Education",
+  "Amrita Vishwa Vidyapeetham", "Amrita School of Engineering",
+  "Thapar Institute of Engineering and Technology",
+
+  "Anna University", "CEG Anna University", "MIT Chennai",
+  "PSG College of Technology", "PSG Tech",
+  "SSN College of Engineering", "Coimbatore Institute of Technology",
+  "Thiagarajar College of Engineering", "Government College of Technology Coimbatore",
+  "Madras Institute of Technology",
+
+  "Delhi University", "DU", "DTU", "Delhi Technological University",
+  "NSUT Delhi", "Netaji Subhas University of Technology",
+  "Jamia Millia Islamia", "Jadavpur University", "BHU", "AMU",
+  "JNU", "Hyderabad University", "University of Hyderabad",
+
+  "IIM Ahmedabad", "IIM Bangalore", "IIM Bengaluru", "IIM Calcutta",
+  "IIM Kolkata", "IIM Lucknow", "IIM Indore", "IIM Kozhikode",
+  "IIM Shillong", "IIM Rohtak", "IIM Ranchi", "IIM Raipur",
+  "IIM Trichy", "IIM Udaipur", "IIM Kashipur", "IIM Amritsar",
+  "IIM Bodh Gaya", "IIM Nagpur", "IIM Sambalpur", "IIM Sirmaur",
+  "IIM Visakhapatnam", "IIM Jammu", "IIM Mumbai",
+
+  "XLRI Jamshedpur", "FMS Delhi", "ISB Hyderabad", "SPJIMR Mumbai",
+  "JBIMS Mumbai", "NMIMS Mumbai", "SIBM Pune", "MDI Gurgaon",
+  "IMI Delhi", "IMT Ghaziabad", "TAPMI Manipal",
+  "K J Somaiya Institute of Management", "SIMSREE Mumbai", "Welingkar Mumbai",
+
+  "AIIMS Delhi", "AIIMS Bhopal", "AIIMS Bhubaneswar", "AIIMS Jodhpur",
+  "AIIMS Patna", "AIIMS Raipur", "AIIMS Rishikesh", "AIIMS Nagpur",
+  "AIIMS Mangalagiri", "AIIMS Bibinagar", "AIIMS Gorakhpur",
+  "AIIMS Kalyani", "AIIMS Deoghar", "AIIMS Bilaspur", "AIIMS Rajkot",
+  "AIIMS Guwahati", "AIIMS Vijaypur", "AIIMS Madurai",
+  "CMC Vellore", "AFMC Pune", "JIPMER Puducherry",
+  "Maulana Azad Medical College", "KGMU Lucknow", "Kasturba Medical College",
+  "St John's Medical College Bangalore", "Grant Medical College Mumbai",
+  "Madras Medical College", "Stanley Medical College",
+
+  "NLS Bangalore", "NLSIU Bangalore", "NALSAR Hyderabad",
+  "NLU Jodhpur", "NLU Delhi", "NUJS Kolkata", "GNLU Gandhinagar",
+  "HNLU Raipur", "NLIU Bhopal", "RMLNLU Lucknow", "WBNUJS",
+
+  "Loyola College", "St Stephens College", "LSR", "Lady Shri Ram College",
+  "Miranda House", "Hindu College", "Ramjas College",
+  "Shri Ram College of Commerce", "SRCC", "Hansraj College",
+  "Kirori Mal College", "Christ University", "Symbiosis Pune",
+  "Symbiosis International University",
+
+  "MES College of Engineering Kuttippuram", "TKM College of Engineering Kollam",
+  "MEA Engineering College Perinthalmanna", "KMEA Engineering College Aluva",
+  "Ilahia College of Engineering",
+
+  "IGDTUW Delhi", "Indira Gandhi Delhi Technical University for Women",
+  "Lakshmibai National Institute of Physical Education",
+  "Mother Teresa Womens University",
+
+  "SASTRA Thanjavur", "Karunya Institute of Technology",
+  "Kalinga Institute of Industrial Technology", "KIIT Bhubaneswar",
+  "Lovely Professional University", "LPU",
+  "Chandigarh University", "Chitkara University",
+  "Shiv Nadar University", "Ashoka University",
+  "OP Jindal Global University", "Plaksha University",
+  "Krea University", "Azim Premji University", "FLAME University",
+  "Bennett University", "Mahindra University"
+]
